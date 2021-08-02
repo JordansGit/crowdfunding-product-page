@@ -1,5 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
 
+body, html, ul {
+  margin: 0 !important;
+}
 
+body {
+  font-family: 'Commissioner', sans-serif;
+  font-size: 16px; /* this can also be p size */ 
+  color: hsl(0, 0%, 48%); 
+  background-color: hsl(176, 50%, 95%); 
+}
 
+header {
+  background-image: url("../images/image-hero-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  color: white;
+
+}
+
+h1, h2, span {
+  color: hsl(0, 0%, 0%); 
+}
+
+h1, h2 {
+  font-weight: 600; 
+}
+
+span {
+  font-weight: 700;
+}
+
+section {
+  background-color: white;
+  width: 45%;
+  margin: 0 auto;
+  border: 1px solid hsl(176, 50%, 47%); 
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+
+.section-one {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -44%; 
+  top: 500px;
+
+}
+
+.section-two {
+  margin-top: 190px;
+}
+
+/* for the footer that comes with it, either it wasn't included in this project or i've deleted it, might need to re-add it if i did delete it" */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+/* 
+
+## Colors
+
+### Primary
+
+- Moderate cyan: hsl(176, 50%, 47%)
+- Dark cyan: hsl(176, 72%, 28%)
+
+*/
+
+
+
+
+/* 
+how to do div overlap, while keeping the div centered, and it stays centered on screen width change. 
+
+
+*/ 
