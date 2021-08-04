@@ -17,42 +17,95 @@ header {
   background-size: cover;
   height: 550px;
   color: white;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
 }
 
+#main {
+  position: absolute;
+  margin-top: 400px;
+  z-index: 1;
+}
+
+section {
+  background-color: white;
+  width: 44%;
+  margin: 0 auto;
+  border: 1px solid hsl(176, 50%, 47%); 
+  border-radius: 12px;
+  margin-bottom: 30px;
+  padding: 60px;
+}
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 35px;
+}
+
+button {
+  width: 250px;
+  height: 73px;
+  border-radius: 40px;
+  border: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: hsl(176, 72%, 28%); 
+  color: hsl(176, 50%, 95%); 
+  display: flex;
+  align-items:center;
+  justify-content: center; 
+}
+
+button p {
+  margin: 0 35px;
+}
+
+.bookmark {
+  justify-content: flex-start;
+}
+
+button img {
+  height: 72px;
+  margin-left: -6px;
+  fill: white;
+}
+
+
+/* TEXT */ 
 h1, h2, span {
   color: hsl(0, 0%, 0%); 
-}
-
-h1, h2 {
-  font-weight: 600; 
 }
 
 span {
   font-weight: 700;
 }
 
-section {
-  background-color: white;
-  width: 45%;
-  margin: 0 auto;
-  border: 1px solid hsl(176, 50%, 47%); 
-  border-radius: 5px;
-  margin-bottom: 30px;
-  padding: 40px;
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  margin-top: 10px;
 }
 
-.section-one {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  margin-left: -44%; 
-  top: 500px;
-
+h2 {
+  font-weight: 600; 
 }
 
-.section-two {
-  margin-top: 190px;
+p {
+  font-size: 20px;
+  margin-top: 0;
 }
 
 /* for the footer that comes with it, either it wasn't included in this project or i've deleted it, might need to re-add it if i did delete it" */
