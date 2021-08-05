@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
 
-body, html, ul {
+body, html {
   margin: 0 !important;
 }
 
@@ -40,12 +40,64 @@ section {
   padding: 60px;
 }
 
+/* SECTION ONE */ 
 .section-one {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
 }
+
+.logo-m {
+  position: absolute;
+  margin-top: -98px;
+  z-index: 2;
+  width: 73px;
+}
+
+/* SECTION TWO */
+.section-two {
+  display: flex;
+}
+
+.s2-text {
+  margin-right: 60px;
+}
+
+.s2-text span {
+  display: block;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* need all of them 2 have margin right 
+  need 2nd and 3rd to have a margin left + a left border 
+
+
+
+/* NAV */ 
+ul {
+  list-style-type: none; 
+  margin: 63px 210px 0 211px;
+  padding: 0;
+  font-size: 18px;
+}
+
+li {
+  display: inline; 
+  margin: 0 19px;
+}
+
+li img {
+  width: 165px;
+}
+
+.nav-right {
+  float: right;
+}
+
+/* BUTTONS */ 
 
 .button {
   display: flex;
@@ -61,8 +113,6 @@ button {
   border: 0px;
   font-size: 20px;
   font-weight: 600;
-  background-color: hsl(176, 72%, 28%); 
-  color: hsl(176, 50%, 95%); 
   display: flex;
   align-items:center;
   justify-content: center; 
@@ -72,8 +122,15 @@ button p {
   margin: 0 35px;
 }
 
-.bookmark {
+.button-one {
+  background-color: hsl(176, 50%, 47%); 
+  color: hsl(176, 50%, 95%); 
+}
+
+.button-bookmark {
   justify-content: flex-start;
+  background-color: hsl(176, 50%, 93%); 
+  color: hsl(176, 72%, 28%); 
 }
 
 button img {
@@ -131,7 +188,19 @@ p {
 
 
 /* 
-how to do div overlap, while keeping the div centered, and it stays centered on screen width change. 
+
+List of images: 
+ icon-bookmark - icon for bookmark button  ***USED 
+ image-hero-desktop.jpg - FOR DESKTOP HEADER  ***USED 
+ logo - TOP LEFT WORD CROWDFUND  ***USED
+ logo-mastercraft - THE MAIN MIDDLE OF SECTION 1 TOP BORDER. 
+
+
+ icon-check
+ icon-close-menu
+ icon-close-modal
+ icon-hamburger
+ image-hero-mobile.jpg - FOR MOBILE HEADER 
 
 
 */ 
