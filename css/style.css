@@ -40,6 +40,7 @@ section {
   padding: 60px;
 }
 
+
 /* SECTION ONE */ 
 .section-one {
   display: flex;
@@ -55,13 +56,23 @@ section {
   width: 73px;
 }
 
+
 /* SECTION TWO */
-.section-two {
+.section-two-text {
   display: flex;
 }
 
 .s2-text {
   margin-right: 60px;
+  padding-right: 60px;
+  padding-left: 60px; 
+  border-left: 1px solid hsl(176, 50%, 47%);
+}
+
+.s2-text:first-child {
+  padding-left: 0;
+  padding-right: 0;
+  border-left: 0;
 }
 
 .s2-text span {
@@ -69,12 +80,103 @@ section {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 5px;
+  color: black; 
 }
 
-/* need all of them 2 have margin right 
-  need 2nd and 3rd to have a margin left + a left border 
+.s2-text p {
+  margin-bottom: 0;
+  color: hsl(176, 72%, 28%); 
+}
+
+.meter { 
+  margin-top: 50px; 
+  height: 16px;  
+  background-color: hsl(176, 50%, 93%); 
+  border-radius: 25px;
+  width: 100%; 
+}
+
+.inner-meter {
+  height: 16px;  
+  background: hsl(176, 50%, 47%); 
+  border-radius: 25px;
+  width: 78%; 
+}
 
 
+/* SECTION 3 */ 
+
+article {
+  border: 1px solid hsl(176, 50%, 47%); 
+  border-radius: 10px; 
+}
+
+.row {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.section-three p {
+  margin-bottom: 35px;
+  line-height: 2;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.section-three .p-two {
+  margin-bottom: 50px; 
+}
+
+article {
+  padding: 40px 40px 33px 40px; 
+}
+
+.row h1 {
+  font-size: 24px; 
+  margin: 0;
+}
+
+.row p {
+  margin: 0;
+}
+
+.row-two {
+  margin: 25px 0; 
+}
+
+.row span {
+  font-size: 40px; 
+}
+
+.row-three p, span {
+  display: flex;
+  align-items: center; 
+}
+
+.row-three span {
+  margin-right: 10px; 
+}
+
+.section-three button {
+  background-color: hsl(176, 50%, 47%); 
+  color: hsl(176, 50%, 95%); 
+  height: 65px; 
+  width: 210px; 
+  font-size: 18px; 
+  font-weight: 400;
+}
+
+article:first-child {
+  margin-top: 0;
+}
+
+article {
+  margin-top: 32px; 
+}
 
 /* NAV */ 
 ul {
