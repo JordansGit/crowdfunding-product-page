@@ -32,9 +32,9 @@ header {
 
 section {
   background-color: white;
-  width: 44%;
+  width: 43.5%;
   margin: 0 auto;
-  border: 1px solid hsl(176, 50%, 47%); 
+  border: 2px solid hsla(176, 50%, 47%, 0.1); 
   border-radius: 12px;
   margin-bottom: 30px;
   padding: 60px;
@@ -63,8 +63,8 @@ section {
 }
 
 .s2-text {
-  margin-right: 60px;
-  padding-right: 60px;
+  margin-right: 53px;
+  padding-right: 65px;
   padding-left: 60px; 
   border-left: 1px solid hsl(176, 50%, 47%);
 }
@@ -79,7 +79,7 @@ section {
   display: block;
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: black; 
 }
 
@@ -129,6 +129,7 @@ article {
 h2 {
   margin-top: 0;
   margin-bottom: 45px;
+  font-size: 26px; 
 }
 
 .section-three .p-two {
