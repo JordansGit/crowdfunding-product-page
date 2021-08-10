@@ -24,7 +24,7 @@ header {
   z-index: 0;
 }
 
-#main {
+.container {
   position: absolute;
   margin-top: 400px;
   z-index: 1;
@@ -41,7 +41,31 @@ section {
 }
 
 
+/* NAV */ 
+
+ul {
+  list-style-type: none; 
+  margin: 63px 210px 0 211px;
+  padding: 0;
+  font-size: 18px;
+}
+
+li {
+  display: inline; 
+  margin: 0 19px;
+}
+
+li img {
+  width: 165px;
+}
+
+.nav-right {
+  float: right;
+}
+
+
 /* SECTION ONE */ 
+
 .section-one {
   display: flex;
   flex-direction: column;
@@ -58,34 +82,22 @@ section {
 
 
 /* SECTION TWO */
+
 .section-two-text {
   display: flex;
 }
 
-.s2-text {
+.text-block {
   margin-right: 53px;
   padding-right: 65px;
   padding-left: 60px; 
   border-left: 1px solid hsl(176, 50%, 47%);
 }
 
-.s2-text:first-child {
+.text-block:first-child {
   padding-left: 0;
   padding-right: 0;
   border-left: 0;
-}
-
-.s2-text span {
-  display: block;
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: black; 
-}
-
-.s2-text p {
-  margin-bottom: 0;
-  color: hsl(176, 72%, 28%); 
 }
 
 .meter { 
@@ -113,6 +125,12 @@ section {
 article {
   border: 1px solid hsl(176, 50%, 47%); 
   border-radius: 10px; 
+  padding: 40px 40px 33px 40px;
+  margin-top: 32px; 
+}
+
+article:first-child {
+  margin-top: 0;
 }
 
 .row {
@@ -121,88 +139,10 @@ article {
   align-items: center; 
 }
 
-.section-three p {
-  margin-bottom: 35px;
-  line-height: 2;
-}
-
-h2 {
-  margin-top: 0;
-  margin-bottom: 45px;
-  font-size: 26px; 
-}
-
-.section-three .p-two {
-  margin-bottom: 50px; 
-}
-
-article {
-  padding: 40px 40px 33px 40px; 
-}
-
-.row h1 {
-  font-size: 24px; 
-  margin: 0;
-}
-
-.row p {
-  margin: 0;
-}
-
 .row-two {
   margin: 25px 0; 
 }
 
-.row span {
-  font-size: 40px; 
-}
-
-.row-three p, span {
-  display: flex;
-  align-items: center; 
-}
-
-.row-three span {
-  margin-right: 10px; 
-}
-
-.section-three button {
-  background-color: hsl(176, 50%, 47%); 
-  color: hsl(176, 50%, 95%); 
-  height: 65px; 
-  width: 210px; 
-  font-size: 18px; 
-  font-weight: 400;
-}
-
-article:first-child {
-  margin-top: 0;
-}
-
-article {
-  margin-top: 32px; 
-}
-
-/* NAV */ 
-ul {
-  list-style-type: none; 
-  margin: 63px 210px 0 211px;
-  padding: 0;
-  font-size: 18px;
-}
-
-li {
-  display: inline; 
-  margin: 0 19px;
-}
-
-li img {
-  width: 165px;
-}
-
-.nav-right {
-  float: right;
-}
 
 /* BUTTONS */ 
 
@@ -246,8 +186,18 @@ button img {
   fill: white;
 }
 
+.section-three button {
+  background-color: hsl(176, 50%, 47%); 
+  color: hsl(176, 50%, 95%); 
+  height: 65px; 
+  width: 210px; 
+  font-size: 18px; 
+  font-weight: 400;
+}
 
-/* TEXT */ 
+
+/* TEXT - GENERIC */ 
+
 h1, h2, span {
   color: hsl(0, 0%, 0%); 
 }
@@ -265,12 +215,67 @@ h1 {
 
 h2 {
   font-weight: 600; 
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-size: 26px; 
 }
 
 p {
   font-size: 20px;
   margin-top: 0;
 }
+
+
+/* SECTION 2 - TEXT */ 
+
+.text-block span { 
+  display: block;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: black; 
+}
+
+.text-block p {  
+  margin-bottom: 0;
+  color: hsl(176, 72%, 28%); 
+}
+
+
+/* SECTION 3 - TEXT */ 
+
+.section-three p { 
+  margin-bottom: 35px;
+  line-height: 2;
+}
+
+.section-three .p-two { 
+  margin-bottom: 50px; 
+}
+
+.row h1 { 
+  font-size: 24px; 
+  margin: 0;
+}
+
+.row p { 
+  margin: 0;
+}
+
+.row span { 
+  font-size: 40px; 
+}
+
+.row-three p, span { 
+  display: flex;
+  align-items: center; 
+}
+
+.row-three span { 
+  margin-right: 10px; 
+}
+
+
 
 /* for the footer that comes with it, either it wasn't included in this project or i've deleted it, might need to re-add it if i did delete it" */
 .attribution { font-size: 11px; text-align: center; }
@@ -282,19 +287,13 @@ p {
 
 /* 
 
-## Colors
-
+## Colors 
 ### Primary
 
 - Moderate cyan: hsl(176, 50%, 47%)
 - Dark cyan: hsl(176, 72%, 28%)
 
-*/
 
-
-
-
-/* 
 
 List of images: 
  icon-bookmark - icon for bookmark button  ***USED 
@@ -308,6 +307,5 @@ List of images:
  icon-close-modal
  icon-hamburger
  image-hero-mobile.jpg - FOR MOBILE HEADER 
-
 
 */ 
