@@ -8,7 +8,7 @@ body {
   font-family: 'Commissioner', sans-serif;
   font-size: 16px; /* this can also be p size */ 
   color: hsl(0, 0%, 48%); 
-  background-color: hsl(176, 50%, 95%); 
+  background-color: hsl(176, 50%, 94%); 
 }
 
 header {
@@ -154,19 +154,21 @@ article:first-child {
 }
 
 button {
-  width: 250px;
-  height: 73px;
+  width: 215px; /* it was 250px */ 
+  height: 56px;
   border-radius: 40px;
   border: 0px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   display: flex;
   align-items:center;
   justify-content: center; 
+  padding: 0;
 }
 
 button p {
-  margin: 0 35px;
+  margin: 0 auto; /* was 0 35px */ 
+  font-size: 18px; 
 }
 
 .button-one {
@@ -176,22 +178,24 @@ button p {
 
 .button-bookmark {
   justify-content: flex-start;
-  background-color: hsl(176, 50%, 93%); 
+  background-color: hsl(176, 50%, 90%); 
   color: hsl(176, 72%, 28%); 
+  width: 192px; /* when clicked + txt changed to 'bookmarked', change width to 215px */ 
 }
 
-button img {
-  height: 72px;
-  margin-left: -6px;
-  fill: white;
+.bookmark-svg circle {
+  fill: hsl(176, 72%, 28%); 
+}
+
+.bookmark-svg path {
+  fill: hsl(176, 50%, 47%); 
 }
 
 .section-three button {
   background-color: hsl(176, 50%, 47%); 
   color: hsl(176, 50%, 95%); 
-  height: 65px; 
-  width: 210px; 
-  font-size: 18px; 
+  /*height: 65px; */
+  width: 200px; /* it was 210 */ 
   font-weight: 400;
 }
 
