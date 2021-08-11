@@ -11,15 +11,19 @@ bookmarkBtn.onclick = function() {
     bookmarkBtn.style.width = "215px";
     bookmarkPath.style.fill = "hsl(0, 0%, 100%)";
     bookmarkBtn.style.backgroundColor = "hsl(176, 50%, 94%)";  
+    bookmarkCircle.style.fill = "hsl(176, 72%, 28%)"; 
     check = true; 
   } else {
     bookmarkText.innerHTML = "Bookmark";
     bookmarkBtn.style.width = "192px";
     bookmarkPath.style.fill = "hsl(176, 50%, 47%)";
     bookmarkBtn.style.backgroundColor = "hsl(176, 50%, 90%)";  
+    bookmarkCircle.style.fill = "rgb(47, 47, 47)"; 
     check = false; 
   }
 }
+
+
 
 /* 
 on active: 

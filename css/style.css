@@ -164,16 +164,23 @@ button {
   align-items:center;
   justify-content: center; 
   padding: 0;
+  background-color: hsl(176, 50%, 47%); 
+  color: hsl(176, 50%, 95%); 
+
+}
+
+.button-one:active, .section-three button:active {
+  background-color: hsl(176, 72%, 28%); 
+  cursor: pointer; 
+}
+
+button {
+  cursor: pointer; 
 }
 
 button p {
   margin: 0 auto; /* was 0 35px */ 
   font-size: 18px; 
-}
-
-.button-one {
-  background-color: hsl(176, 50%, 47%); 
-  color: hsl(176, 50%, 95%); 
 }
 
 .button-bookmark {
@@ -183,7 +190,7 @@ button p {
   width: 192px; /* when clicked + txt changed to 'bookmarked', change width to 215px */ 
 }
 
-.bookmark-svg circle {
+.bookmark-svg circle:active {
   fill: hsl(176, 72%, 28%); 
 }
 
@@ -192,8 +199,6 @@ button p {
 }
 
 .section-three button {
-  background-color: hsl(176, 50%, 47%); 
-  color: hsl(176, 50%, 95%); 
   /*height: 65px; */
   width: 200px; /* it was 210 */ 
   font-weight: 400;
