@@ -318,3 +318,39 @@ List of images:
  image-hero-mobile.jpg - FOR MOBILE HEADER 
 
 */ 
+
+/* MODAL */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 13% auto; 
+  width: 80%; 
+  max-width: 950px; 
+  border: 1px solid #888; /* maybe change this */ 
+  border-radius: 12px; 
+  padding: 50px; 
+
+}
+
+.close {
+  color: #aaa; /* change this */ 
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: black; /* maybe change this*/ 
+  cursor: pointer;
+}
