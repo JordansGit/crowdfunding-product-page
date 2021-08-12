@@ -129,10 +129,6 @@ article {
   margin-top: 32px; 
 }
 
-article:first-child {
-  margin-top: 0;
-}
-
 .row {
   display: flex; 
   justify-content: space-between;
@@ -339,18 +335,86 @@ List of images:
   max-width: 950px; 
   border: 1px solid #888; /* maybe change this */ 
   border-radius: 12px; 
-  padding: 50px; 
+  padding: 70px; 
 
 }
+
+.modal h1 {
+  margin-top: 0;
+}
+
+.modal p {
+  margin: 30px 0 65px 0;
+  font-size: 24px; 
+}
+
+.modal article {
+  padding: 45px 40px; 
+  display: flex; 
+}
+
+.modal-text {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.modal-text p {
+  margin: 23px 0 0 0;
+  line-height: 1.8;
+  font-size: 22px;
+}
+
+.modal-text span {
+  display: inline;
+  margin: -3px 12px 0 0; 
+  font-size: 28px;
+}
+
+.modal-text h2 {
+  margin-bottom: 25px;
+}
+
+.modal-text-topline {
+  display: flex;
+  align-items: baseline;
+}
+
+.modal-text-topline h2, .modal-text-topline p {
+  margin: 0 20px 0 0;
+}
+
+.p-right { 
+  margin-left: auto;
+  display: flex;
+  align-items: center; 
+}
+
+input[type=radio] {
+  border: 0px;
+  width: 62px;
+  height: 33px;
+  margin: 3px 0;
+}
+
 
 .close {
   color: #aaa; /* change this */ 
   float: right;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
+  margin-top: -40px;
+  margin-right: -25px;
 }
 
 .close:hover {
   color: black; /* maybe change this*/ 
   cursor: pointer;
+}
+
+.modal label:hover {
+  cursor: pointer; 
+}
+
+.empty {
+  opacity: 0.4;
 }

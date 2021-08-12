@@ -32,7 +32,7 @@
         A beautiful & handcrafted monitor stand to reduce neck and eye strain.
       </p>
       <div class="button">
-        <button class="button-one">Back this project</button>
+        <button class="button-one select-reward" >Back this project</button>
         <button id="bookmark-btn" class="button-bookmark">
           <svg class="bookmark-svg" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
@@ -87,7 +87,7 @@
         </div>
         <div class="row row-three">
           <p><span>101 </span>left</p>
-          <button>Select Reward</button>  
+          <button class="select-reward">Select Reward</button>  
         </div>
       </article>
   
@@ -104,11 +104,11 @@
         </div>
         <div class="row row-three">
           <p><span>64 </span>left</p>
-          <button>Select Reward</button>
+          <button class="select-reward">Select Reward</button>
         </div>
       </article>
   
-      <article>
+      <article class="empty">
         <div class="row">
           <h1>Mahogany Special Edition</h1>
           <p>Pledge $200 or more</p>
@@ -121,7 +121,7 @@
         </div>
         <div class="row row-three">
           <p><span>0 </span>left</p>
-          <button>Out of Stock</button>
+          <button class="select-reward">Out of Stock</button>
         </div>
       </article>
   
@@ -138,38 +138,67 @@
       <h1>Back this project</h1>
       <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
-      <article>
-        <!-- big clickable circle -->
-        <h2>Pledge with no reward</h2>
-        <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
-      </article>
+      <label for="modal-one">
+        <article>
+          <input type="radio" id="modal-one" name="modal">
+          <div class="modal-text">
+            <div class="modal-text-topline">
+              <h2>Pledge with no reward</h2>
+            </div>
+            <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>  
+          </div>
+        </article>
+      </label>
 
-      <article>
-        <!-- big clickable circle -->
-        <h2>Bamboo Stand</h2>
-        <p>Pledge $25 or more</p>
-        <p><span>101 </span>left</p>
-        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-          you’ll be added to a special Backer member list.</p>
-      </article>
+      <label for="modal-two">
+        <article>
+          <input type="radio" id="modal-two" name="modal">
+          <div class="modal-text">
+            <div class="modal-text-topline">
+              <h2>Bamboo Stand</h2>
+              <p>Pledge $25 or more</p>
+              <div class="p-right">
+                <span>101 </span><p>left</p>      
+              </div>
+            </div>
+            <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+          </div>
+        </article>
+      </label>
 
-      <article>
-        <!-- big clickable circle -->
-        <h2>Black Edition Stand</h2>
-        <p>Pledge $75 or more</p>
-        <p><span>64 </span>left</p>
-        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-          member list. Shipping is included.</p>
-      </article>
+      <label for="modal-three">
+        <article>
+          <input type="radio" id="modal-three" name="modal">
+          <div class="modal-text">
+            <div class="modal-text-topline">
+              <h2>Black Edition Stand</h2>
+              <p>Pledge $75 or more</p>
+              <div class="p-right">
+                <span>64 </span><p>left</p>      
+              </div>
+            </div>
+            <p>You get a Black Special Edition computer stand and a personal thank you.
+            <br>
+            You’ll be added to our Backer member list. Shipping is included.</p>
+          </div>
+        </article>
+      </label>
 
-      <article>
-        <!-- big clickable circle -->
-        <h2>Mahogany Special Edition</h2>
-        <p>Pledge $200 or more</p>
-        <p><span>0 </span>left</p>
-        <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-          to our Backer member list. Shipping is included.</p>
-      </article>
+      <label for="modal-four">
+        <article class="empty">
+          <input type="radio" id="modal-four" name="modal">
+          <div class="modal-text">
+            <div class="modal-text-topline">
+              <h2>Mahogany Special Edition</h2>
+              <p>Pledge $200 or more</p>
+              <div class="p-right">
+                <span>0 </span><p>left</p>  
+              </div>  
+            </div>
+            <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+          </div>
+        </article>
+      </label>
 
     </div>
   
@@ -197,7 +226,7 @@
 
   <!-- Selection modal end -->
 
-  
+
 
   <!-- Success modal start -->
 

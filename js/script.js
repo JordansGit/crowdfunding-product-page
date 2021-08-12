@@ -37,12 +37,19 @@ on active:
 */ 
 
 var modal = document.getElementById("modal"); // Get the modal
-var btn = document.querySelector(".button-one"); // Get button that opens the modal
+var btn = document.querySelectorAll(".select-reward"); // Get button that opens the modal
 var close = document.querySelector(".close"); // Get div that closes the modal
 
-btn.onclick = function() { // When the user clicks on the button, open the modal
-  modal.style.display = "block";
+// When the user clicks on the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+  btn[i].onclick = function() {
+    modal.style.display = "block"; 
+  }
 }
+/*
+btn.onclick = function() { 
+  modal.style.display = "block";
+} */
 
 close.onclick = function() { // When the user clicks on <span> (x), close the modal
   modal.style.display = "none";
